@@ -655,8 +655,9 @@ GameObject:
   - component: {fileID: 2085807759}
   - component: {fileID: 2085807758}
   - component: {fileID: 2085807757}
+  - component: {fileID: 2085807761}
   m_Layer: 0
-  m_Name: Quad
+  m_Name: Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -739,3 +740,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 3.469, y: 0, z: 0}
+--- !u!114 &2085807761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085807756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579ad94b9aad03444a55a09c0055d825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MainTexture: {fileID: 0}
