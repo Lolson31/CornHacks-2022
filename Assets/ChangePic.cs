@@ -24,12 +24,22 @@ public class ChangePic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (OVRInput.GetDown(OVRInput.Button.One))
+        if (OVRInput.GetDown(OVRInput.Button.One) || OVRInput.GetDown(OVRInput.Button.Three))
         {
             currSlide++;
-            if (currSlide == textures.Length)
+            if (currSlide >= textures.Length)
             {
                 currSlide = 0;
+            }
+            m_Renderer.material.SetTexture("_MainTex", (Texture2D)textures[currSlide]);
+        }
+
+        if (OVRInput.GetDown(OVRInput.Button.Two) || OVRInput.GetDown(OVRInput.Button.Four))
+        {
+            currSlide--;
+            if (currSlide < 0)
+            {
+                currSlide = textures.Length - 1;
             }
             m_Renderer.material.SetTexture("_MainTex", (Texture2D)textures[currSlide]);
         }
